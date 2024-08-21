@@ -9,8 +9,8 @@ class CTgraph_images:
         """Initialize getParameters"""
         self.rnd = np.random.RandomState()
         self.rnd.seed(conf_data['image_dataset']['seed'])
-        self.SMALL_ROTATION_ON_READ = conf_data['image_dataset']['small_rotation_on_read']
-        self.NOISE_ON_IMAGES = conf_data['image_dataset']['noise_on_images_on_read']
+        self.SMALL_ROTATION_ON_READ = conf_data['image_dataset']['rotation_on_read']
+        self.NOISE_ON_IMAGES = conf_data['image_dataset']['noise_on_read']
         self.oneD = conf_data['image_dataset']['1D']
         self.high_value = 254 - self.NOISE_ON_IMAGES
         self.NR_OF_IMAGES = conf_data['image_dataset']['nr_of_images']

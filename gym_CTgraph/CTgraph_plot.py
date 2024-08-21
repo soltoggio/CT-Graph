@@ -34,7 +34,7 @@ class CTgraph_plot:
         fig2.subplots_adjust(left=0.03, right=0.97, hspace=0.3, wspace=0.05)
 
         for ax, image_nr in zip(axs2.flat, numbers):
-            ax.imshow(imageDataset.getNoisyImage(image_nr))
+            ax.imshow(imageDataset.getNoisyImage(image_nr),cmap='gray')
             ax.set_title(str(image_nr))
 
         plt.tight_layout()

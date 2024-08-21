@@ -1,6 +1,6 @@
 """Launch script to learn to classify images: this is just a trial to see how to prepare the training set and train it in pytorch"""
 import numpy as np
-import gym
+import gymnasium as gym
 from gym_CTgraph import CTgraph_env
 from gym_CTgraph.CTgraph_plot import CTgraph_plot
 from gym_CTgraph.CTgraph_conf import CTgraph_conf
